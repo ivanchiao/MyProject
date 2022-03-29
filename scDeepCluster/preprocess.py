@@ -63,7 +63,7 @@ def read_dataset(adata, transpose=False, test_split=False, copy=False):
     return adata
 
 
-def normalize(adata, filter_min_counts=True, size_factors=True, normalize_input=True, logtrans_input=True):
+def normalize(adata, filter_min_counts=False, size_factors=True, normalize_input=False, logtrans_input=False):
 
     if filter_min_counts:
         sc.pp.filter_genes(adata, min_counts=1)
