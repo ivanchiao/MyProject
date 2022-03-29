@@ -290,4 +290,4 @@ dataset1 = TensorDataset(torch.Tensor(X), torch.Tensor(X_raw), torch.Tensor(sf))
 dataloader = DataLoader(dataset1, batch_size=Para[0], shuffle=True)
 train_sdcn(dataset, X_raw, sf)
 time = get_time() - time_start
-print("Running Time：" + str(time))
+print("Running Time:" + str(time))
