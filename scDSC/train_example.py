@@ -232,7 +232,7 @@ y = y.map(mapping).to_numpy()
 time_start = get_time()
 
 model_para = [1000, 1000, 4000]
-Para = [2048, 1e-4, 1000]
+Para = [2048, 1e-3, 1000]
 Cluster_para = [np.unique(y).shape[0], 2000, 500, 10, x.shape[1], 20]
 Balance_para = [0.1, 0.01, 1, 0.1, 0.5]
 
@@ -290,4 +290,4 @@ dataset1 = TensorDataset(torch.Tensor(X), torch.Tensor(X_raw), torch.Tensor(sf))
 dataloader = DataLoader(dataset1, batch_size=Para[0], shuffle=True)
 train_sdcn(dataset, X_raw, sf)
 time = get_time() - time_start
-print("Running Time：", time)
+print("Running Time：" + str(time))
