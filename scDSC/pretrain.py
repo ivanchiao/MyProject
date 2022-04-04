@@ -119,7 +119,7 @@ y = y.map(mapping).to_numpy()
 
 
 
-Para = [1024, 1e-4, 100]
+Para = [1024, 1e-4, 1000]
 model_para = [1000, 1000, 4000]
 Cluster_para = [np.unique(y).shape[0], 20, x.shape[1], 2000, 500, 10]
 
