@@ -22,8 +22,8 @@ from evaluation import eva
 from loader import BPRTrainLoader
 
 ##### parameters
-data_path = 'data/klein_2000.csv'
-label_path = 'data/klein_truelabel.csv'
+data_path = 'data/baron1_2000.csv'
+label_path = 'data/baron1_truelabel.csv'
 n_layers = 3
 device='cuda:0'
 num_epochs=100
